@@ -1,0 +1,98 @@
+<!-- Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outerBorder {
+            border: 1px solid black;
+            /* width: 50%; */
+        }
+
+        .heading {
+            background-color: red;
+            color: white;
+            /* height: 3em; */
+            /* width: 30%; */
+            margin: 4px;
+            position: relative;
+            text-align: center;
+        }
+
+        .address {
+            margin-top: 2px;
+            display: grid;
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outerBorder">
+
+        <div class="heading">
+            Yes! I want to subscribe to <i><b>Mag-O-Zine</b></i>
+        </div>
+        <br>
+        <form>
+            <div style="text-align: center;">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName">
+
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName">
+            </div>
+            <!-- 
+            <br> -->
+            <div class="address">
+
+                <input name="address">
+                <label for="address">Address</label>
+            </div>
+
+            <div style="text-align: center;">
+                <label for="city">city</label>
+                <input name="city">
+
+                <label for="state">state</label>
+                <input name="state">
+
+                <label for="zip">zip</label>
+                <input name="zip">
+            </div>
+
+            <label for="checkbox">Subscribe for:</label>
+            <input type="checkbox" name="1year" checked>
+            <label for="1year">1 year ($19.95)</label>
+
+            <input type="checkbox" name="2year">
+            <label for="2year">2 years ($35.00)</label><br>
+
+
+            <label for="checkbox">Send me more information about</label><br>
+            <input type="checkbox" name="computer" checked>
+            <label for="computer">Computer Zine</label><br>
+
+
+            <input type="checkbox" name="computer">
+            <label for="computer">Computer Zine</label><br>
+
+            <input type="checkbox" name="fishin">
+            <label for="fishin">Fishin Zine</label><br>
+
+            <input type="checkbox" name="cat" checked>
+            <label for="cat">Cat-O Zine</label><br>
+
+
+
+        </form>
+
+    </div>
+</body>
+
+</html>
